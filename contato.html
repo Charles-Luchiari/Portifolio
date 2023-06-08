@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +14,9 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="logo"><img src="asserts/imagens/logo.jpg" height="200" width="200" alt=""></div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -33,31 +35,36 @@
     </nav>
 
 
-    <h1>Entre em contato comigo:</h1>
-    
+    <h1 class="titulo">Entre em contato comigo:</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-    </form>
-    
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Nome Completo</label>
+        <input type="nome" class="form-control" id="exampleFormControlInput2" placeholder="Nome Completo">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@gmail.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+    </div>
     
     <hr>
     <footer>
         <div class="justify">
             <a href="https://github.com/Charles-Luchiari"><i class="fa-brands fa-github fa-flip fa-xl"></i></a>
-            <a href="https://www.linkedin.com/in/charles-luchiari98/"><i class="fa-brands fa-linkedin fa-flip fa-xl"></i></a>
-            
+            <a href="https://www.linkedin.com/in/charles-luchiari98/"><i
+                    class="fa-brands fa-linkedin fa-flip fa-xl"></i></a>
+
         </div>
         <p>Desenvolvido por Charles - 2023 &copy;</p>
     </footer>
 </body>
+
 </html>
