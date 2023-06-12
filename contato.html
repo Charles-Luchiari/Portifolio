@@ -29,7 +29,7 @@
                 <a class="nav-link active" href="#video">Video</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="contato.html">Contato</a>
+                <a target="_blank" class="nav-link active" href="contato.html">Contato</a>
             </li>
         </ul>
     </nav>
@@ -39,16 +39,18 @@
 
 
     <div class="mb-3">
-        <label for="exampleFormControlInput2" class="form-label">Nome Completo</label>
-        <input type="nome" class="form-control" id="exampleFormControlInput2" placeholder="Nome Completo">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input onkeyup="validaNome()" type="nome" class="form-control" id="nome" placeholder="Nome Completo">
     </div>
+    <div id="txtNome"></div>
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@gmail.com">
+        <label for="email" class="form-label">Email</label>
+        <input onkeyup="validaEmail()" type="email" class="form-control" id="email" placeholder="nome@gmail.com">
     </div>
+    <div id="txtEmail"></div>
     <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="assunto" class="form-label">Mensagem:</label>
+        <textarea class="form-control" id="assunto" rows="3"></textarea>
     </div>
 
     <div class="d-grid gap-2 col-6 mx-auto">
@@ -58,13 +60,14 @@
     <hr>
     <footer>
         <div class="justify">
-            <a href="https://github.com/Charles-Luchiari"><i class="fa-brands fa-github fa-flip fa-xl"></i></a>
-            <a href="https://www.linkedin.com/in/charles-luchiari98/"><i
+            <a target="_blank" href="https://github.com/Charles-Luchiari"><i class="fa-brands fa-github fa-flip fa-xl"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/charles-luchiari98/"><i
                     class="fa-brands fa-linkedin fa-flip fa-xl"></i></a>
 
         </div>
         <p>Desenvolvido por Charles - 2023 &copy;</p>
     </footer>
+    <script src="asserts/script.js"></script>
 </body>
 
 </html>
