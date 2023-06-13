@@ -29,6 +29,27 @@ body{
     padding: 10px 10px 10px 10px;
     
 }
+.contato{
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    width: 90%;
+
+}
+.mensagem{
+    background-color: aqua;
+    border: 1px solid red;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+
+}
+.buscaCep{
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 30px;
+    width: 50%;
+}
 
 .container{
     display: flex;
@@ -73,3 +94,4 @@ p{
 .par{
     padding: 30px;
 }
+
